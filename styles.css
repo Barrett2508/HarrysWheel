@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.canvas-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 20px;  /* Add spacing between the canvas and the input/buttons */
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Makes it clearer that the buttons are clickable */
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+}
